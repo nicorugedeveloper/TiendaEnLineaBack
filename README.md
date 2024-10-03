@@ -16,4 +16,11 @@ Asegúrate de tener instalados los siguientes requisitos antes de empezar:
 1. Instala MySQL Server si no lo tienes ya instalado. Puedes descargarlo desde [MySQL](https://dev.mysql.com/downloads/mysql/).
 2. Crea una base de datos nueva en MySQL para el proyecto:
    ```sql
-   CREATE DATABASE NombreDeTuBaseDeDatos;
+   CREATE DATABASE tiendaenlinea;
+   ```
+3. Actualiza la cadena de conexión en el archivo appsettings.json para conectar tu aplicación a la base de datos MySQL:
+   ```json
+       "ConnectionStrings": {
+    "DefaultConnection": "Server=localhost;Database=tiendaenlinea;User=root;Password=1234567890;"
+  }
+   ```
